@@ -31,15 +31,24 @@ let questions = [
   " Bad Thing",
   "n Old Machine",
   " Tool for Hunting",
-  " Verb (infinitive-tense)"  
+  " Verb (infinitive-tense)"
   ];
-let questionsCounter = 0;
+let questionCounter = 0;
 
 for (let i = numberOfQuestions; i >= 0; i--) {
-  // console.log(i);
-  const userInputs[i] = prompt(`Please Enter A${questions[i]}:`)
-  questionsCounter++;
-  // console.log(questionsCounter)
+  console.log(
+    questions[questionCounter] + `... (${i} questions left)`
+  );
+
+  userInputs.push(
+    prompt(
+      `Please Enter A${questions[questionCounter]} ... (${i} questions left)`
+    )
+  );
+
+  console.log(userInputs);
+
+  questionCounter++;
 }
 
 
