@@ -2,13 +2,44 @@
 let userInputs = [];
 let numberOfQuestions = 29;
 
-let questions = ["Enter A Verb", "Enter A Person's Name", "Enter A Noun", "Enter An Adjective", "Enter A Place", "Enter A Year"];
+let questions = [
+  " Year",
+  " Person's Name",
+  " Computer Model",
+  " Famous Place",
+  " Relationship Title",
+  " Type of Bug",
+  " Computer Part",
+  " Profession",
+  " Type of Book",
+  " Verb (Past-tense)",
+  "nother Very (Past-tense)",
+  "n Adjective",
+  " Pronoun",
+  " Noun",
+  " Verb",
+  " Date (long-form ie January 1, 2000)",
+  " Number",
+  " Noun",
+  " Famous Museum",
+  " City, State",
+  "n Adjective",
+  " Physics Law",
+  " Person's Name",
+  " Number",
+  " Type of Document",
+  " Bad Thing",
+  "n Old Machine",
+  " Tool for Hunting",
+  " Verb (infinitive-tense)"  
+  ];
 let questionsCounter = 0;
 
 for (let i = numberOfQuestions; i >= 0; i--) {
-  console.log(i);
+  // console.log(i);
+  const userInputs[i] = prompt(`Please Enter A${questions[i]}:`)
   questionsCounter++;
-  console.log(questionsCounter)
+  // console.log(questionsCounter)
 }
 
 
