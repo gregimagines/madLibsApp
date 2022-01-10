@@ -1,7 +1,5 @@
 "use strict";
 
-window.onLoad {
-
   let userInputs = [];
   let numberOfQuestions = 28;
 
@@ -60,4 +58,3 @@ window.onLoad {
   alert(`You've completed the madlibs.`)
 
   document.write(originalStory);
-}
